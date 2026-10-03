@@ -1,0 +1,4 @@
+/* CinemaSelector.jsx
+
+Displays the three simulated cinemas.
+ */
