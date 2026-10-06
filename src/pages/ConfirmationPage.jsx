@@ -22,7 +22,7 @@ confirmation page
 
 import { useLocation } from "react-router-dom";
 import BookingConfirmation from "../components/BookingConfirmation";
-import {link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function ConfirmationPage() {
     const location = useLocation();
