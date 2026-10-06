@@ -1,16 +1,63 @@
-# React + Vite
+CINEMA BOOKING APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie discovery and booking app built with React and The Movie Database (TMDB) API. Users can browse real movies, search the TMDB movie database, view morvie details, and complete a simulated cinema booking flow with cinema and showtime selection, interactive seat selection, and booking confirmation.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Technologies Used:
 
-## React Compiler
+1. React
+2. JavaScript
+3. React Router
+4. Tailwind CSS
+5. TMDB API
+6. Vite
+7. Local Storage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+Features:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Movie browsing
+2. Movie search
+3. Movie details
+4. Cinema booking
+5. Showtime selection
+6. Seat selection
+7. Booking confirmation
+8. Booking history
+9. Favourite movies
+10. Recommended movies carousel
+11. Genre, year and rating filters
+12. Student promo code with 20% discount
+13. Seat recommendations
+14. Rating visualisation
+15. Lazy-loaded movie images
+16. Debounced search
+
+
+Getting Started:
+
+1. Clone Repository
+git clone https://github.com/whatcanpeacedo-dotcom/cinema-booking-project 
+
+2. Open Project
+cd cinema-booking-project
+
+3. Install Dependencies
+npm install
+
+4. Add TMDB API key
+create a .env.local file in the project root and add:
+VITE_TMDB_API_KEY
+
+5. Start the development server
+npm run dev
+Oen the local URL provided by vite in your browser
+
+6. Deployment
+The application is deployed using vercel.
+
+Live Website: https://cinema-booking-project.vercel.app/ 
+
+GitHub Repository: https://github.com/whatcanpeacedo-dotcom/cinema-booking-project 
+
+
