@@ -110,7 +110,7 @@ function SeatSelectionPage(){
 
             {selectedSeats.length>0 &&(
                 <p className="text-yellow-400 mt-6">
-                        Recommended: next to your selected seat
+                        Recommended: Choose seats around your selected seat for you and your group
                 </p>
             )}
             <h2 className="text-2xl font-bold mt-8 mb-4"> Booking Summary </h2>
