@@ -53,7 +53,7 @@ VITE_TMDB_API_KEY
 npm run dev
 Oen the local URL provided by vite in your browser
 
-6. Deployment
+6. Deployment:
 The application is deployed using vercel.
 
 Live Website: https://cinema-booking-project.vercel.app/ 
