@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Header from "./components/Header"
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
 import MovieDetailPage from "./pages/MovieDetailPage";
@@ -18,6 +19,7 @@ import ConfirmationPage from "./pages/ConfirmationPage";
 function App(){
     return (
         <BrowserRouter>
+          <Header />
             <Routes>
                 <Route path = "/" element = {<HomePage/>} />
 

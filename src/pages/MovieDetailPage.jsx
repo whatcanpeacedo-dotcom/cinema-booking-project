@@ -136,7 +136,10 @@ function MovieDetailPage(){
                 </div>
 
             </div>
-
+                    <Link to="/"
+                    className="inline-block mb-6 bg-red-600 text-white px-4 py-2 rounded-lg mt-4">
+                    Back to Home
+                    </Link>
         </div>
     );
 }

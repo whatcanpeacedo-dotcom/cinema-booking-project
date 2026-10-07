@@ -149,7 +149,14 @@ function SeatSelectionPage(){
                     !selectedShowtime ||
                     selectedSeats.length === 0
                 }
-                className="bg-red-600 text-white px-6 py-3 rounded-lg disabled:bg-gray-600 mt-4" > Confirm </button>
+                className="bg-red-600 text-white px-6 py-3 rounded-lg disabled:bg-gray-600 mt-4" > Confirm </button> <br />
+
+            <button
+                onClick={() => navigate("/")}
+                className="bg-red-600 text-white px-4 py-2 rounded-lg mt-4 mb-6"
+            >
+                Back to Home
+            </button>
 
         </div>
     );

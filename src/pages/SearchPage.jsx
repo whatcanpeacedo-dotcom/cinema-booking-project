@@ -13,12 +13,14 @@ movie cards
 
 
 import {useState, useEffect} from "react";
+import {useSearchParams, Link} from "react-router-dom";
 import {searchMovies} from "../utils/tmdb";
 import MovieCard from "../components/MovieCard";
 
        function SearchPage(){
-       
-              const [search, setSearch]  = useState("");
+
+              const [searchParams] = useSearchParams();
+              const [search, setSearch]  = useState(searchParams.get("query") || "");
               const [movies, setMovies] = useState ([]);
               const [loading, setLoading] = useState(false);
               const [error, setError] = useState("");
@@ -58,19 +60,25 @@ import MovieCard from "../components/MovieCard";
               return <p>{error}</p>;
            }
     return (
-       <div className="min-h-screen bg-gray-940 p-6">
+       <div className="min-h-screen bg-gray-950 p-6">
              
-              <h1 className="text-3xl font-bold text-red-500 mb-6">Search Movies</h1>
+              <div className="text-center">
+              
+                     <h1 className="text-3xl font-bold text-red-500 mb-6">Search Movies</h1>
 
-              <input
-              type = "text"
-              value = {search}
-              onChange = {(e) => setSearch(e.target.value)}
-              placeholder = "search for a movie"
-              className = " max-w-xl p-3 rounded-lg bg-white border-2 border-black-400 text-black mb-4"
-              />
+                     <div className="flex justify-center gap-2">
 
-              <button onClick = {handleSearch} className="bg-red-600 text-white px-4 py-3 rounded">Search</button>
+                            <input
+                            type = "text"
+                            value = {search}
+                            onChange = {(e) => setSearch(e.target.value)}
+                            placeholder = "search for a movie"
+                            className = "p-3 rounded-lg bg-white text-black w-full max-w-4xl"
+                            />
+
+                     </div>
+
+              </div>  
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
                      {movies.map((movie) => (
@@ -80,6 +88,11 @@ import MovieCard from "../components/MovieCard";
                             />
                      ))}
               </div>
+
+                      <Link to="/" className="inline-block mb-6 bg-red-600 text-white px-4 py-2 rounded-lg" >
+                            Back to Home
+                     </Link>
+
        </div>
     );
 }
